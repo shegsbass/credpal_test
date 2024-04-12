@@ -1,8 +1,8 @@
 import 'package:credpal_test/presentation/const/app_colors.dart';
 import 'package:credpal_test/presentation/const/global.dart';
-import 'package:credpal_test/presentation/screens/homescreen.dart';
+import 'package:credpal_test/presentation/screens/home/homescreen.dart';
 import 'package:credpal_test/presentation/screens/invest_screen.dart';
-import 'package:credpal_test/presentation/screens/menu_screen.dart';
+import 'package:credpal_test/presentation/screens/menu/menu_screen.dart';
 import 'package:credpal_test/presentation/screens/payment_screen.dart';
 import 'package:credpal_test/presentation/screens/shopping_sceen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +15,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -60,8 +59,8 @@ class _BottomNavState extends State<BottomNav> {
       body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.black, // Set your active item color here
-        unselectedItemColor: Colors.grey, // Set your inactive item color here
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         onTap: _onItemTapped,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
